@@ -17,7 +17,7 @@ samtools 1.15
 > bwa mem CDS/HBV_CDS.fa sample_R2.fastq.gz | samtools view -F 4 -bS -o sample.bam
 
 ### 2, parsing alignment recodes from bam file
-> HBV_resolve.py --bed CDS/hbv_cds.bed --read1 sample_R1.fastq.gz --bam sample.bam --out sample.align.txt --sample samplename
+> HBV_parsing.py --bed CDS/hbv_cds.bed --read1 sample_R1.fastq.gz --bam sample.bam --out sample.align.txt --sample samplename
 
 Using '--celltype_file celltype.txt' if celltype is defined in 'celltype.txt' and "sample_name\tbarcode\tcelltype" in header.
 
